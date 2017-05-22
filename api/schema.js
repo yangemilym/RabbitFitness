@@ -8,6 +8,12 @@ const Users = db.define('Users', {
   lastName: Sequelize.STRING,
   profileImage: Sequelize.STRING,
   points: Sequelize.INTEGER,
+  authID: Sequelize.STRING,
+  bestSoloThreeMi: Sequelize.FLOAT,
+  machineGoal: Sequelize.TEXT,
+  factors: Sequelize.STRING,
+  timeOfDay: Sequelize.STRING,
+  lastMachineGoal: Sequelize.DATE,
 });
 
 const Badges = db.define('Badges', {
@@ -24,11 +30,15 @@ const RunHistories = db.define('RunHistories', {
   duration: Sequelize.INTEGER, // in seconds
   date: Sequelize.DATE,
   route: Sequelize.TEXT,
+  pack: Sequelize.STRING,
+  absAltitude: Sequelize.FLOAT,
+  changeAltitude: Sequelize.FLOAT,
 });
 
 const Challenges = db.define('Challenges', {
   description: Sequelize.STRING, // limit to 30 chars
-  status: Sequelize.STRING,
+  status: Sequelize.STRING, // completed, pending, accepted
+  source: Sequelize.STRING, // source username of challenge .. null for goals
 });
 
 const Packs = db.define('Packs', {
@@ -37,17 +47,15 @@ const Packs = db.define('Packs', {
   totalDistance: Sequelize.FLOAT,
 });
 
-const Users_Packs = db.define('Users_Packs');
-const Users_Pending_Packs = db.define('Users_Pending_Packs', {
-  sentBy: Sequelize.INTEGER,
+const Users_Packs = db.define('Users_Packs', {
+  confirmed: Sequelize.BOOLEAN,
+  bestThreeMile: Sequelize.FLOAT,
 });
+
 const Users_Badges = db.define('Users_Badges');
 
 Users.belongsToMany(Packs, { through: Users_Packs });
 Packs.belongsToMany(Users, { through: Users_Packs });
-Users_Pending_Packs.belongsTo(Users);
-Users_Pending_Packs.belongsTo(Packs);
-Users.hasMany(Users_Pending_Packs);
 Users.belongsToMany(Badges, { through: Users_Badges });
 Badges.belongsToMany(Users, { through: Users_Badges });
 Users.hasMany(RunHistories);
@@ -59,16 +67,15 @@ Challenges.belongsTo(Users);
 Users.sync();
 Packs.sync();
 Users_Packs.sync();
-Users_Pending_Packs.sync();
 Badges.sync();
 Users_Badges.sync();
 RunHistories.sync();
 Challenges.sync();
 
+
 exports.Users = Users;
 exports.Packs = Packs;
 exports.Users_Packs = Users_Packs;
-exports.Users_Pending_Packs = Users_Pending_Packs;
 exports.Badges = Badges;
 exports.Users_Badges = Users_Badges;
 exports.RunHistories = RunHistories;

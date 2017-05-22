@@ -2,19 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
+import reducers from './reducers/index';
+import { Router, Route } from 'react-router';
 import thunk from 'redux-thunk';
 import App from './components/App';
-//import Profile from './pages/Profile';
-import Login from './pages/Login';
 
 const createHistory = require('history').createHashHistory;
 
 const hashHistory = createHistory();
 
-
+// validate authentication for private routes
 ReactDOM.render(
-  <div>
-    <Login />
-  </div>
+  <Provider store={createStore(reducers, applyMiddleware(thunk))} >
+    <Router history={hashHistory}>
+      <Route path={'/'} component={App} />
+    </Router>
+  </Provider>
   , document.getElementById('app'));
+
+  // Provider store={createStore(reducers, applyMiddleware(thunk))} >
+  //   <Router history={hashHistory} routes={createRoutes()} />
+  // </Provider>

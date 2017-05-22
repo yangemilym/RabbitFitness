@@ -1,0 +1,481 @@
+#yellowCircle {
+  background-size: 90%;
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  background-repeat: no-repeat;
+  z-index: -10;
+  background-position: center center;
+  margin-top: -9px;
+  opacity: .75;
+}
+
+.yellowCircle {
+  background-size: 100%;
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  background-repeat: no-repeat;
+  z-index: -10;
+  background-position: center center;
+  margin-top: -9px;
+  opacity: .75;
+}
+
+#greenHex {
+  background-size: 90%;
+  width: 28vw;
+  height: 28vw;
+  position: fixed;
+  background-repeat: no-repeat;
+  z-index: -9;
+  background-position: 20% left;
+  margin-left: 70vw;
+  opacity: .75;
+}
+
+#greenHex2 {
+  background-size: 90%;
+  width: 28vw;
+  height: 28vw;
+  position: fixed;
+  background-repeat: no-repeat;
+  z-index: -9;
+  background-position: 20% right;
+  top: 700;
+  margin-top: 200px;
+  opacity: .75;
+}
+
+#greenHex3 {
+  background-size: 90%;
+  width: 28vw;
+  height: 28vw;
+  position: fixed;
+  background-repeat: no-repeat;
+  z-index: -9;
+  background-position: 20% right;
+  top: 700;
+  margin-left: 50vw;
+  margin-top: 400px;
+  opacity: .75;
+}
+
+.topLogin {
+  position: absolute;
+  z-index: 30;
+  margin-left: 30px !important;
+  margin-top: 30px !important;
+}
+
+#rabbit {
+  margin-left: 32vw;
+  margin-top: 25px;
+}
+
+#welcome {
+  margin-left: 29vw;
+  margin-top: 90px;
+  text-shadow: 2px 2px rgba(100,100,100,.5); 
+}
+
+h2 {
+  font-size: 50px;
+  font-family: avenir;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: avenir;
+}
+
+#dl {
+  margin-top: 70px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10vw;
+  position: relative;
+  text-shadow: 2px 2px rgba(100,100,100,.5);
+}
+
+#manage {
+  margin-top: 20px;
+  margin-left: 10vw;
+  margin-bottom: 50px;
+  margin-right: 10vw;
+  position: relative;
+  text-shadow: 2px 2px rgba(100,100,100,0.5);
+}
+
+#viewStats {
+  margin-top: -45px;
+  margin-left: 10vw;
+  margin-bottom: 50px;
+  margin-right: 10vw;
+  position: relative;
+  text-shadow: 2px 2px rgba(100,100,100,0.5);
+}
+
+.appDescr {
+  text-align: center;
+  margin-right: 10vw;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color:rgba(238, 166, 56, 0.5);
+}
+
+.appDescr.first {
+  margin-top: 100px;
+}
+
+.profDescr {
+  text-align: center;
+  margin-left: 12vw;
+  padding-right: 0vw;
+  padding-left: 20px;
+  background-color:rgba(0, 95, 190, 0.5);
+}
+
+.profDescr.first {
+  margin-top: 180px;
+}
+
+.statsDescr {
+  text-align: center;
+  margin-right: 10vw;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color:rgba(255, 120, 90, 0.5);
+}
+
+.statsDescr.first {
+  margin-top: 115px;
+}
+
+.bottomLogin {
+  margin-left: 22% !important;
+  margin-top: -190px !important;
+  position: absolute;
+  z-index: 30;
+  height: 60px;
+  border: solid #b1b1b1 2px !important;
+  background-color: #292929 !important;
+  border-radius: 10px !important;
+  width: 240px !important;
+  font-size: 20px !important;
+}
+
+.iosStore {
+  max-height: 60px;
+  margin-left: 55%;
+  z-index: 30;
+  margin-top: -190px;
+  position: absolute;
+}
+
+#getStarted {
+  position: absolute;
+  z-index:30;
+  font-size: 45px;
+  margin-left: 30%;
+  margin-top: -290px;
+  text-shadow: 2px 2px rgba(100,100,100,.5);
+}
+
+#invisible {
+  margin-top: -42px;
+}
+
+.bgr {
+  height: 790px;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.bgr .sq {
+  opacity: .75;
+  width: 100vw;
+  height: 800px;
+}
+
+.bgr1 {
+  opacity: .75;
+  height: 148px;
+  position: relative;
+  z-index: 20;
+  width: 100vw;
+}
+
+.bgr1 .sq {
+  opacity: .75;
+  width: 100vw;
+  height: 400px;
+}
+
+.childEl {
+  position: absolute;
+  opacity: 1;
+}
+
+#appDemo {
+  border: solid #545454 17px;
+  border-radius: 22px;
+  float: right;
+  margin-top: 100px;
+  max-height: 550px;
+}
+
+#profDemo {
+  margin-left: 5vw;
+  margin-top: 80px;
+  max-height: 450px; 
+  float: left; 
+  border-radius: 12px;
+  border: solid #212121 5px;
+
+}
+
+#statsDemo {
+  margin-right: 3vw; 
+  margin-top: 82px; 
+  max-height: 400px;
+  float: right;
+  border-radius: 12px;
+  border: solid #212121 5px;
+
+}
+
+#profilePic {
+ max-height: 40px;
+ border-radius: 20px;
+}
+
+#clear {
+  clear: both;
+}
+
+.badgeImg {
+  max-width: 85px;
+}
+
+.ui.card.hist:hover {
+  box-shadow: inset  0px 0px 1px 1px gray !important;
+}
+
+.google-map {
+  height: 500px;
+  width: 100%;
+}
+
+.map-view {
+  height: 100%;
+  width: 100%;
+}
+
+.map-view button.entry {
+  float: right;
+  border-radius: 0px;
+}
+
+.pageBG {
+  background-size: 100%;
+  width: 100vw;
+  height: 400vw;
+  position: fixed;
+  z-index: -10;
+  margin-top: -120px;
+  opacity: .75;
+}
+
+.tealBG {
+  background: linear-gradient(to right, #29beac, #86cead, #29beac);
+}
+
+.blueBG {
+  background: linear-gradient(to right, #238ce3, #22aecc, #238ce3);
+}
+
+.salmonBG {
+  background: linear-gradient(to right, #ff8c69, #ffb769, #ff8c69);
+}
+
+.yellowBG {
+  background: linear-gradient(to right, #ffb263, #ffdd87, #ffb263);
+}
+
+.pageCont {
+  margin-top: 20px;
+}
+
+.ui.card {
+  margin-top: auto;
+  min-width: 325px;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  font-family: avenir;
+  padding: 1px;
+}
+
+.imgContainer {
+  width: 95px;
+  display: inline-block;
+  height: 115px;
+}
+
+.imgContainer p {
+  display: none;
+  color: #000000;
+}
+
+.imgContainer:hover p {
+  display: block;
+  color: gray;
+  position: absolute;
+  width: 90px;
+  font-family: avenir;
+  font-size: 12px;
+  text-align: center;
+}
+
+.challenge {
+  width: 310px;
+  margin-top: 7px;
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  border: solid #cce2e2;
+  border-width: 3px;
+  margin-left: -7px;
+}
+
+.goal {
+  width: 310px;
+  margin-top: 7px;
+  background-color: salmon;
+  color: white;
+  border-radius: 5px;
+  border: solid #fccfc2;
+  border-width: 3px;
+  margin-left: -7px;
+}
+
+.pendingChallenge {
+  width: 310px;
+  margin-top: 10px;
+  background-color: #a3a3a3;
+  color: white;
+  border-radius: 5px;
+  border: solid #e0e0e0;
+  border-width: 3px;
+  margin-left: -7px;
+}
+
+.goalText {
+  width: 250px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.challengeText {
+  width: 250px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.rejectChallenge:hover {
+  color: red;
+}
+
+.rejectChallenge {
+  font-size: 24px;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.acceptChallenge {
+  font-size: 20px;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.generatedGoal {
+  width: 310px;
+  margin-top: 7px;
+  background-color: #FFD769;
+  color: white;
+  border-radius: 5px;
+  border: solid #fff3d3;
+  border-width: 3px;
+  margin-left: -7px;
+}
+
+.acceptChallenge:hover {
+  color: green;
+}
+
+.modalInput {
+  margin-bottom: 20px;
+  width: 260px;
+  height: 32px;
+  font-size: 16px;
+}
+
+.completeGoal {
+  position: relative;
+  font-size: 22px;
+  padding: 10px;
+  text-align: right;
+}
+
+.completeGoal:hover {
+  color: #fff2d1;
+}
+
+a {
+  color: teal;
+}
+
+a:hover {
+  color: #a3a3a3;
+}
+
+.completedGoals {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.accContent {
+  margin-left: 24px;
+}
+
+#packmates:hover {
+  color: #a3a3a3;
+}
+
+.ui.input {
+  width: 300px;
+  margin-top: 15px;
+}
+
+.ui.pointing.secondary.menu {
+  margin-bottom: 0px;
+  background-color: white;
+}
+
+.ui.button {
+  background-color: salmon;
+  color: white;
+  font-family: avenir;
+  font-size: 15px;
+}
+
+.ui.button:hover {
+  background-color: salmon;
+  color: #fff2d1;
+}
